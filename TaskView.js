@@ -23,6 +23,12 @@ TaskView.prototype = {
         this.$tasksContainer = this.$container.find('.js-tasks-container');
 
         return this;
+    },
+
+    setupHandlers: function () {
+        this.addTaskButtonHandler = this.addTaskButton.bind(this);
+
+        return this;
     }
 }
 
